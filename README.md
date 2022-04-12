@@ -1,4 +1,4 @@
-# START. Clothing
+# START. Clothing Webstore
 
 An e-commerce website built using React and Firestore. Featuring a design based on the [END Clothing](https://www.endclothing.com/au) webstore.
 
@@ -7,9 +7,11 @@ An e-commerce website built using React and Firestore. Featuring a design based 
 ## Table of Contents
 
 -   [Screenshots](#screenshots)
+-   [Start-up Instructions](#start-up-instructions)
+-   [Goal](#goal)
 -   [Project Requirements](#project-requirements)
 -   [Lifecycle and Implementation Details](#lifecycle-and-implementation-details)
--   [Design Inspirations](#design-inspirations)
+-   [Design Inspiration](#design-inspiration)
 -   [Future Updates and Current Limitations](#future-updates-and-current-limitations)
 
 ## Screenshots
@@ -20,9 +22,28 @@ An e-commerce website built using React and Firestore. Featuring a design based 
     <img src="" height="400" width=auto>
 </p>
 
+## Start-up Instructions
+
+In the project directory, you can run:
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
+
 ## Goal
 
 1. Create a e-commerce store based on [requirements](#project-requirements)
+2. Learn to work with React and different libraries
+    - React components
+    - Functional react with hooks
+    - Managing data flow with Props and State
+    - Deployment
+3. Learn to work with FireStore
+    - Persisting data to an API
 
 ## Project Requirements
 
@@ -32,7 +53,8 @@ An e-commerce website built using React and Firestore. Featuring a design based 
 
 -   Home Page
 -   Grid of products
--   Product PageCarousel of featured products
+-   Product Page
+-   Carousel of featured products
 -   Product Page (with id parameter) Similar to a product page on another site, allows you to add to cart and select product variants
 
 #### All products should be stored in Firestore, you should store the following information:
@@ -66,7 +88,7 @@ An e-commerce website built using React and Firestore. Featuring a design based 
 
 -   React
 -   JavaScript
--   Firestore
+-   FireStore
 -   Fetch
 -   Async/await
 
@@ -75,7 +97,7 @@ An e-commerce website built using React and Firestore. Featuring a design based 
 -   //
 -   //
 
-## Design Inspirations
+## Design Inspiration
 
 ### END Clothing Webstore
 
