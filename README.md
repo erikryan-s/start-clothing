@@ -17,7 +17,7 @@ An e-commerce website built using React and Firestore. Featuring a design based 
 ## Screenshots
 
 <p align="center">
-    <img src="https://i.gyazo.com/52e6efb4dd80d5e2dbbc54b7d84895b2.jpg" height="400" width=auto>
+    <img src="https://user-images.githubusercontent.com/100544923/163005073-076fdded-923d-4ba7-92da-805b66d38aa0.gif" height="400" width=auto>
     <img src="" height="400" width=auto>
     <img src="" height="400" width=auto>
 </p>
