@@ -87,10 +87,12 @@ You will also see any lint errors in the console.
 ### Tech Used
 
 -   React
+-   Material-UI
 -   JavaScript
 -   FireStore
 -   Fetch
 -   Async/await
+-   Git & Github
 
 ### Breakdown of Logic
 
