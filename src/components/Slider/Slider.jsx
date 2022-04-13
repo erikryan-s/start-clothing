@@ -2,6 +2,7 @@ import { ArrowLeftOutlined, ArrowRightOutlined } from "@material-ui/icons";
 import { useState } from "react";
 import styled from "styled-components";
 import { sliderItems } from "../../data";
+import { mobile } from "../../responsive";
 
 const Container = styled.div`
     width: 100%;
@@ -9,13 +10,13 @@ const Container = styled.div`
     display: flex;
     position: relative;
     overflow: hidden;
+    ${mobile({ display: "none" })}
 `;
 
-// left/right arrow
 const Arrow = styled.div`
     width: 50px;
     height: 50px;
-    background-color: lightgray;
+    background-color: #fff7f7;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -34,11 +35,10 @@ const Arrow = styled.div`
 const Wrapper = styled.div`
     height: 100%;
     display: flex;
-    transition: all 0.5s ease;
+    transition: all 1.5s ease;
     transform: translateX(${(props) => props.slideIndex * -100}vw);
 `;
 
-// slide container
 const Slide = styled.div`
     width: 100vw;
     height: 100vh;
@@ -47,33 +47,35 @@ const Slide = styled.div`
     background-color: #${(props) => props.bg};
 `;
 
-// image
 const ImgContainer = styled.div`
     height: 100%;
     flex: 1;
 `;
+
 const Img = styled.img`
     height: 80%;
 `;
 
-// information
 const InfoContainer = styled.div`
     flex: 1;
     padding: 50px;
 `;
+
 const Title = styled.h1`
     font-size: 70px;
 `;
+
 const Desc = styled.p`
     margin: 50px 0px;
     font-size: 20px;
     font-weight: 500;
     letter-spacing: 3px;
 `;
+
 const Button = styled.button`
     padding: 10px;
     font-size: 20px;
-    background: transparent;
+    background-color: transparent;
     cursor: pointer;
 `;
 

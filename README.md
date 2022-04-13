@@ -88,10 +88,11 @@ You will also see any lint errors in the console.
 
 -   React
 -   Material-UI
+-   Styled Components
 -   JavaScript
 -   FireStore
 -   Fetch
--   Async/await
+-   Async / Await
 -   Git & Github
 
 ### Breakdown of Logic

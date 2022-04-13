@@ -22,24 +22,6 @@ export const sliderItems = [
     },
 ];
 
-export const categories = [
-    {
-        id: 1,
-        img: "shirt-style.jpeg",
-        title: "SHIRT STYLE!",
-    },
-    {
-        id: 2,
-        img: "loungewear-love.jpeg",
-        title: "LOUNGEWEAR LOVE",
-    },
-    {
-        id: 3,
-        img: "light-jackets.jpeg",
-        title: "LIGHT JACKETS",
-    },
-];
-
 export const popularProducts = [
     {
         id: 1,
