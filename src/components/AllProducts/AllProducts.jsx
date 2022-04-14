@@ -65,11 +65,11 @@ const Icon = styled.div`
     }
 `;
 
-const Product = ({ item }) => {
+const AllProducts = ({ products }) => {
     return (
         <Container>
             <Circle />
-            <Img src={require(`../../../assets/popular/${item.img}`)} />
+            <Img /*src={require(/*`../../assets/products/${products.img}`)}*/ />
             <Info>
                 <Icon>
                     <ShoppingCartOutlined />
@@ -85,4 +85,4 @@ const Product = ({ item }) => {
     );
 };
 
-export default Product;
+export default AllProducts;

@@ -1,8 +1,9 @@
 import styled from "styled-components";
 import Navbar from "../../components/Navbar/Navbar";
 import Announcement from "../../components/Announcement/Announcement";
-import Products from "../../components/Prods/Products/Products";
 import Footer from "../../components/Footer/Footer";
+import { products } from "../../services/data";
+import AllProducts from "../../components/AllProducts/AllProducts";
 
 const Container = styled.div``;
 
@@ -32,6 +33,18 @@ const Select = styled.select`
 
 const Option = styled.option``;
 
+const ProductsHeader = styled.h1`
+    text-align: center;
+    padding-top: 20px;
+`;
+
+const ProductSection = styled.div`
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+`;
+
 const ProductList = () => {
     return (
         <Container>
@@ -39,30 +52,6 @@ const ProductList = () => {
             <Announcement />
             <Title>Clothes</Title>
             <FilterContainer>
-                <Filter>
-                    <FilterText>Filter Products:</FilterText>
-                    <Select>
-                        <Option disabled selected>
-                            Color
-                        </Option>
-                        <Option>White</Option>
-                        <Option>Black</Option>
-                        <Option>Red</Option>
-                        <Option>Blue</Option>
-                        <Option>Yellow</Option>
-                        <Option>Green</Option>
-                    </Select>
-                    <Select>
-                        <Option disabled selected>
-                            Size
-                        </Option>
-                        <Option>XS</Option>
-                        <Option>S</Option>
-                        <Option>M</Option>
-                        <Option>L</Option>
-                        <Option>XL</Option>
-                    </Select>
-                </Filter>
                 <Filter>
                     <FilterText>Sort Products:</FilterText>
                     <Select>
@@ -72,7 +61,12 @@ const ProductList = () => {
                     </Select>
                 </Filter>
             </FilterContainer>
-            <Products />
+            <ProductsHeader>All Products</ProductsHeader>
+            <ProductSection>
+                {products.map((products) => (
+                    <AllProducts item={products} key={products.id} />
+                ))}
+            </ProductSection>
             <Footer />
         </Container>
     );

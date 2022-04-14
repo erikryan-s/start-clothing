@@ -1,9 +1,9 @@
 import Home from "./containers/Home/Home";
 import ProductList from "./containers/ProductList/ProductList";
-import Product from "./containers/Home/Home";
+import ProductPage from "./containers/ProductPage/ProductPage";
 
 const App = () => {
-    return <Home />;
+    return <ProductList />;
 };
 
 export default App;
