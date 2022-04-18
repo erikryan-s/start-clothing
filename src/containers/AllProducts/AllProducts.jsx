@@ -67,7 +67,6 @@ const AllProducts = () => {
                     <ProductsSection item={item} key={item.id} />
                 ))}
             </ProductsContainer>
-
             <Footer />
             <Outlet />
         </Container>

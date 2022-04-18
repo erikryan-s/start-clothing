@@ -4,7 +4,7 @@ import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
 import { products } from "../../services/data";
 import ProductInfo from "../../components/ProductInfo/ProductInfo";
-import { useParams, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 const Container = styled.div``;
 
@@ -23,13 +23,9 @@ const ProductPage = () => {
         <Container>
             <Navbar />
             <Announcement />
-            <Link
-                to={`products/:${item.id}`}
-                style={{ textDecoration: "none" }}>
-                <ItemContainer>
-                    <ProductInfo item={item} />
-                </ItemContainer>
-            </Link>
+            <ItemContainer>
+                <ProductInfo item={item} />
+            </ItemContainer>
             <Footer />
         </Container>
     );
