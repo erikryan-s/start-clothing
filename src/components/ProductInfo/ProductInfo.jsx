@@ -1,6 +1,5 @@
 import { Add, Remove } from "@material-ui/icons";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
 const Container = styled.div``;
 
@@ -94,38 +93,34 @@ const Button = styled.button`
 const ProductInfo = ({ item }) => {
     return (
         <Container>
-            <Link
-                to={`products/:${item.id}`}
-                style={{ textDecoration: "none" }}>
-                <ImgContainer>
-                    <Img src={require(`../../assets/products/${item.img}`)} />
-                </ImgContainer>
-                <ItemInfo>
-                    <Title>{`${item.title}`}</Title>
-                    <Desc>{`${item.description}`}</Desc>
-                    <Price>{`$ ${item.price}`}</Price>
-                    <FilterContainer>
-                        <Filter>
-                            <FilterTitle>Size</FilterTitle>
-                            <FilterSize>
-                                <FilterSizeOption>XS</FilterSizeOption>
-                                <FilterSizeOption>S</FilterSizeOption>
-                                <FilterSizeOption>M</FilterSizeOption>
-                                <FilterSizeOption>L</FilterSizeOption>
-                                <FilterSizeOption>XL</FilterSizeOption>
-                            </FilterSize>
-                        </Filter>
-                    </FilterContainer>
-                    <AddContainer>
-                        <AmountContainer>
-                            <Remove />
-                            <Amount>1</Amount>
-                            <Add />
-                        </AmountContainer>
-                        <Button>ADD TO CART</Button>
-                    </AddContainer>
-                </ItemInfo>
-            </Link>
+            <ImgContainer>
+                <Img src={require(`../../assets/products/${item.img}`)} />
+            </ImgContainer>
+            <ItemInfo>
+                <Title>{`${item.title}`}</Title>
+                <Desc>{`${item.description}`}</Desc>
+                <Price>{`$ ${item.price}`}</Price>
+                <FilterContainer>
+                    <Filter>
+                        <FilterTitle>Size</FilterTitle>
+                        <FilterSize>
+                            <FilterSizeOption>XS</FilterSizeOption>
+                            <FilterSizeOption>S</FilterSizeOption>
+                            <FilterSizeOption>M</FilterSizeOption>
+                            <FilterSizeOption>L</FilterSizeOption>
+                            <FilterSizeOption>XL</FilterSizeOption>
+                        </FilterSize>
+                    </Filter>
+                </FilterContainer>
+                <AddContainer>
+                    <AmountContainer>
+                        <Remove />
+                        <Amount>1</Amount>
+                        <Add />
+                    </AmountContainer>
+                    <Button>ADD TO CART</Button>
+                </AddContainer>
+            </ItemInfo>
         </Container>
     );
 };

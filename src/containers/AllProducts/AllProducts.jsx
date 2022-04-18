@@ -4,7 +4,7 @@ import Announcement from "../../components/Announcement/Announcement";
 import Footer from "../../components/Footer/Footer";
 import { products } from "../../services/data";
 import ProductsSection from "../../components/ProductsSection/ProductsSection";
-import { Outlet } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
 
 const Container = styled.div``;
 
@@ -67,6 +67,7 @@ const AllProducts = () => {
                     <ProductsSection item={item} key={item.id} />
                 ))}
             </ProductsContainer>
+
             <Footer />
             <Outlet />
         </Container>

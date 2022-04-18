@@ -4,7 +4,7 @@ import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
 import { products } from "../../services/data";
 import ProductInfo from "../../components/ProductInfo/ProductInfo";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 
 const Container = styled.div``;
 
@@ -16,18 +16,20 @@ const ItemContainer = styled.div`
 // route: /products/:productId
 const ProductPage = () => {
     let { productId } = useParams();
-    console.log(productId);
     const item = products.find(
         (product) => product.id === parseInt(productId, 10),
     );
-    console.log(productId);
     return (
         <Container>
             <Navbar />
             <Announcement />
-            <ItemContainer>
-                <ProductInfo item={item} />
-            </ItemContainer>
+            <Link
+                to={`products/:${item.id}`}
+                style={{ textDecoration: "none" }}>
+                <ItemContainer>
+                    <ProductInfo item={item} />
+                </ItemContainer>
+            </Link>
             <Footer />
         </Container>
     );
