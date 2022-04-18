@@ -1,4 +1,11 @@
-import { GitHub, LinkedIn, MailOutline, Phone, Room } from "@material-ui/icons";
+import {
+    GitHub,
+    LinkedIn,
+    MailOutline,
+    Phone,
+    Room,
+    InsertLink,
+} from "@material-ui/icons";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
@@ -99,6 +106,12 @@ const Footer = () => {
                         href="https://www.linkedin.com/in/erik-serrano"
                         color="000000">
                         <LinkedIn />
+                    </SocialIcon>
+                    <SocialIcon
+                        as="a"
+                        href="https://www.endclothing.com/au"
+                        color="000000">
+                        <InsertLink />
                     </SocialIcon>
                 </SocialContainer>
             </Left>

@@ -1,4 +1,3 @@
-import { Add, Remove } from "@material-ui/icons";
 import styled from "styled-components";
 import Announcement from "../../components/Announcement/Announcement";
 import Footer from "../../components/Footer/Footer";
@@ -14,10 +13,14 @@ const ItemContainer = styled.div`
     display: flex;
 `;
 
-// route: /product/:productId
-const Product = () => {
-    const { productId } = useParams();
-    const item = products.find((product) => product.id === productId);
+// route: /products/:productId
+const ProductPage = () => {
+    let { productId } = useParams();
+    console.log(productId);
+    const item = products.find(
+        (product) => product.id === parseInt(productId, 10),
+    );
+    console.log(productId);
     return (
         <Container>
             <Navbar />
@@ -30,4 +33,4 @@ const Product = () => {
     );
 };
 
-export default Product;
+export default ProductPage;
