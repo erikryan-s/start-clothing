@@ -50,21 +50,9 @@ const Center = styled.div`
 const Logo = styled.h1`
     font-weight: bold;
     ${mobile({ fontSize: "24px" })}
-    text-decoration: none;
+    underline: none;
     color: black;
     cursor: pointer;
-    &:link {
-        text-decoration: none;
-    }
-    &:visited {
-        text-decoration: none;
-    }
-    &:hover {
-        text-decoration: none;
-    }
-    &:active {
-        text-decoration: none;
-    }
 `;
 
 const Right = styled.div`
@@ -94,13 +82,13 @@ const Navbar = () => {
                     </SearchContainer>
                 </Left>
                 <Center>
-                    <Link to="/">
+                    <Link to="/" style={{ textDecoration: "none" }}>
                         <Logo>START.</Logo>
                     </Link>
                 </Center>
                 <Right>
                     <MenuItem>REGISTER</MenuItem>
-                    <MenuItem>SIGN</MenuItem>
+                    <MenuItem>SIGN IN</MenuItem>
                     <MenuItem>
                         <Badge badgeContent={4} color="primary">
                             <ShoppingCartOutlined />

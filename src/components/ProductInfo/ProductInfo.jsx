@@ -94,7 +94,7 @@ const Button = styled.button`
 const ProductInfo = ({ item }) => {
     return (
         <Container>
-            <Link>
+            <Link style={{ textDecoration: "none" }}>
                 <ImgContainer>
                     <Img src={require(`../../assets/products/${item.img}`)} />
                 </ImgContainer>

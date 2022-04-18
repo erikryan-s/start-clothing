@@ -55,23 +55,11 @@ const List = styled.ul`
 
 const ListItem = styled.li`
     width: 50%;
-    padding: 0px 10px;
+    padding-right: 10px;
     word-wrap: normal;
     display: inline-block;
     color: black;
     cursor: pointer;
-    &:link {
-        text-decoration: none;
-    }
-    &:visited {
-        text-decoration: none;
-    }
-    &:hover {
-        text-decoration: none;
-    }
-    &:active {
-        text-decoration: none;
-    }
 `;
 
 const Right = styled.div`
@@ -117,10 +105,10 @@ const Footer = () => {
             <Center>
                 <Title>Useful Links</Title>
                 <List>
-                    <Link to="/">
+                    <Link to="/" style={{ textDecoration: "none" }}>
                         <ListItem>Home</ListItem>
                     </Link>
-                    <Link to="/products">
+                    <Link to="/products" style={{ textDecoration: "none" }}>
                         <ListItem>Products</ListItem>
                     </Link>
                 </List>

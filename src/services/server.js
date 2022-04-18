@@ -7,8 +7,8 @@ import data from "../services/data";
 
 // record - object containing the data we want to send to the DB
 
-export const createStudent = async (record) => {
-    const collectionRef = firestore.collection("products");
+export const addCartItem = async (record) => {
+    const collectionRef = firestore.collection("cart");
     // https://firebase.google.com/docs/reference/js/v8/firebase.firestore.CollectionReference#add
     // Add a new document to this collection with the specified data, assigning it a document ID automatically.
     await collectionRef.add(record);

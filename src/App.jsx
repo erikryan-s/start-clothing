@@ -1,10 +1,5 @@
 import React from "react";
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    BrowserRouter,
-} from "react-router-dom";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Home from "./containers/Home/Home";
 import AllProducts from "./containers/AllProducts/AllProducts";
 import ProductPage from "./containers/ProductPage/ProductPage";
@@ -19,7 +14,7 @@ const App = () => {
                 <Route path="/products">
                     <AllProducts />
                 </Route>
-                <Route path="/product/:id">
+                <Route path="/products/:productId">
                     <ProductPage />
                 </Route>
             </Switch>
