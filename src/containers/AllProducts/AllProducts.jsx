@@ -3,7 +3,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import Announcement from "../../components/Announcement/Announcement";
 import Footer from "../../components/Footer/Footer";
 import { products } from "../../services/data";
-import AllProducts from "../../components/AllProducts/AllProducts";
+import ProductsSection from "../../components/ProductsSection/ProductsSection";
 
 const Container = styled.div``;
 
@@ -38,38 +38,37 @@ const ProductsHeader = styled.h1`
     padding-top: 20px;
 `;
 
-const ProductSection = styled.div`
+const ProductsContainer = styled.div`
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 `;
 
-const ProductList = () => {
+const AllProducts = () => {
     return (
         <Container>
             <Navbar />
             <Announcement />
-            <Title>Clothes</Title>
+            <Title>All Products</Title>
             <FilterContainer>
                 <Filter>
                     <FilterText>Sort Products:</FilterText>
                     <Select>
-                        <Option selected>Newest</Option>
-                        <Option>Price (asc)</Option>
+                        <Option defaultValue>Price (asc)</Option>
                         <Option>Price (desc)</Option>
                     </Select>
                 </Filter>
             </FilterContainer>
             <ProductsHeader>All Products</ProductsHeader>
-            <ProductSection>
-                {products.map((products) => (
-                    <AllProducts item={products} key={products.id} />
+            <ProductsContainer>
+                {products.map((item) => (
+                    <ProductsSection item={item} key={item.id} />
                 ))}
-            </ProductSection>
+            </ProductsContainer>
             <Footer />
         </Container>
     );
 };
 
-export default ProductList;
+export default AllProducts;

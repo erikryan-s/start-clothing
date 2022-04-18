@@ -2,6 +2,7 @@ import { Badge } from "@material-ui/core";
 import { Search, ShoppingCartOutlined } from "@material-ui/icons";
 import styled from "styled-components";
 import { mobile } from "../../services/responsive";
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
     height: 60px;
@@ -49,7 +50,23 @@ const Center = styled.div`
 const Logo = styled.h1`
     font-weight: bold;
     ${mobile({ fontSize: "24px" })}
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    &:link {
+        text-decoration: none;
+    }
+    &:visited {
+        text-decoration: none;
+    }
+    &:hover {
+        text-decoration: none;
+    }
+    &:active {
+        text-decoration: none;
+    }
 `;
+
 const Right = styled.div`
     flex: 1;
     display: flex;
@@ -77,7 +94,9 @@ const Navbar = () => {
                     </SearchContainer>
                 </Left>
                 <Center>
-                    <Logo>START.</Logo>
+                    <Link to="/">
+                        <Logo>START.</Logo>
+                    </Link>
                 </Center>
                 <Right>
                     <MenuItem>REGISTER</MenuItem>

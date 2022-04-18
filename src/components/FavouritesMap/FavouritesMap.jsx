@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { favourites } from "../../../services/data";
-import Favourite from "../Favourite/Favourite";
+import { favourites } from "../../services/data";
+import FavouritesSection from "../FavouritesSection/FavouritesSection";
 
 const Container = styled.div``;
 
@@ -9,24 +9,24 @@ const FavouritesHeader = styled.h1`
     padding-top: 20px;
 `;
 
-const FavouriteSection = styled.div`
+const FavouritesContainer = styled.div`
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 `;
 
-const Favourites = () => {
+const FavouritesMap = () => {
     return (
         <Container>
             <FavouritesHeader>Your Favourites</FavouritesHeader>
-            <FavouriteSection>
-                {favourites.map((favourites) => (
-                    <Favourite item={favourites} key={favourites.id} />
+            <FavouritesContainer>
+                {favourites.map((item) => (
+                    <FavouritesSection item={item} key={item.id} />
                 ))}
-            </FavouriteSection>
+            </FavouritesContainer>
         </Container>
     );
 };
 
-export default Favourites;
+export default FavouritesMap;

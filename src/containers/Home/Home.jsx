@@ -2,7 +2,7 @@ import React from "react";
 import Announcement from "../../components/Announcement/Announcement";
 import Navbar from "../../components/Navbar/Navbar";
 import Slider from "../../components/Slider/Slider";
-import Favourites from "../../components/Favs/Favourites/Favourites";
+import FavouritesMap from "../../components//FavouritesMap/FavouritesMap";
 import Footer from "../../components/Footer/Footer";
 
 const Home = () => {
@@ -11,7 +11,7 @@ const Home = () => {
             <Announcement />
             <Navbar />
             <Slider />
-            <Favourites />
+            <FavouritesMap />
             <Footer />
         </div>
     );

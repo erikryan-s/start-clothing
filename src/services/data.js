@@ -80,7 +80,7 @@ export const products = [
         price: 135,
         description:
             "A.P.C.'s French roots are well-known — after all, European minimalism is its specialty — but this tee makes them even more obvious. It's cut from pure white cotton and stamped with both logo branding and the location of the label's Parisian workshop.",
-        img: "APC-WHITEpng",
+        img: "APC-WHITE.png",
     },
     {
         id: 4,
@@ -88,7 +88,7 @@ export const products = [
         price: 185,
         description:
             "Acne Studios uses its fun-loving Face logo to infuse jersey staples with Scandi minimalism. The result? Elevated everyday essentials like this black tee. It's cut from organic cotton, then completed at the chest with an appliquéd patch.",
-        img: "AS-BLACK.png",
+        img: "AS-TSHIRT.png",
     },
     {
         id: 5,
@@ -96,7 +96,7 @@ export const products = [
         price: 639,
         description:
             "Acne Studios offers up a timeless style with this blue denim jacket. It's made from organic cotton denim, then cut to a loose fit for a relaxed feel and detailed with four pockets to complete eth authentic look.",
-        img: "AC-JACKET.png",
+        img: "AS-JACKET.png",
     },
     {
         id: 6,
@@ -104,7 +104,7 @@ export const products = [
         price: 490,
         description:
             "Channelling a nostalgic 90s vibe, these black jeans from Acne Studios are washed for a vintage, worn-in look. Cut to a baggy, straight-leg fit, they're made in Italy using organic cotton for a premium, hardwearing feel.",
-        img: "AC-JEANS.png",
+        img: "AS-JEANS.png",
     },
     {
         id: 7,

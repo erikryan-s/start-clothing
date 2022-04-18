@@ -1,12 +1,6 @@
-import {
-    Facebook,
-    Instagram,
-    MailOutline,
-    Phone,
-    Room,
-    Twitter,
-} from "@material-ui/icons";
+import { GitHub, LinkedIn, MailOutline, Phone, Room } from "@material-ui/icons";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
     display: flex;
@@ -39,6 +33,7 @@ const SocialIcon = styled.div`
     align-items: center;
     justify-content: center;
     margin-right: 20px;
+    cursor: pointer;
 `;
 
 const Center = styled.div`
@@ -60,7 +55,23 @@ const List = styled.ul`
 
 const ListItem = styled.li`
     width: 50%;
-    margin-bottom: 10px;
+    padding: 0px 10px;
+    word-wrap: normal;
+    display: inline-block;
+    color: black;
+    cursor: pointer;
+    &:link {
+        text-decoration: none;
+    }
+    &:visited {
+        text-decoration: none;
+    }
+    &:hover {
+        text-decoration: none;
+    }
+    &:active {
+        text-decoration: none;
+    }
 `;
 
 const Right = styled.div`
@@ -89,22 +100,29 @@ const Footer = () => {
                     Featuring a design based on the END clothing webstore.
                 </Desc>
                 <SocialContainer>
-                    <SocialIcon color="3B5999">
-                        <Facebook />
+                    <SocialIcon
+                        as="a"
+                        href="https://github.com/erikryan-s"
+                        color="000000">
+                        <GitHub />
                     </SocialIcon>
-                    <SocialIcon color="E4405F">
-                        <Instagram />
-                    </SocialIcon>
-                    <SocialIcon color="55ACEE">
-                        <Twitter />
+                    <SocialIcon
+                        as="a"
+                        href="https://www.linkedin.com/in/erik-serrano"
+                        color="000000">
+                        <LinkedIn />
                     </SocialIcon>
                 </SocialContainer>
             </Left>
             <Center>
                 <Title>Useful Links</Title>
                 <List>
-                    <ListItem>Home</ListItem>
-                    <ListItem>Products</ListItem>
+                    <Link to="/">
+                        <ListItem>Home</ListItem>
+                    </Link>
+                    <Link to="/products">
+                        <ListItem>Products</ListItem>
+                    </Link>
                 </List>
             </Center>
             <Right>

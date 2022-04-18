@@ -65,13 +65,11 @@ const Icon = styled.div`
     }
 `;
 
-const Favourite = ({ favourites }) => {
+const ProductsSection = ({ item }) => {
     return (
         <Container>
             <Circle />
-            <Img
-                src={require(`../../../assets/favourites/${favourites.img}`)}
-            />
+            <Img src={require(`../../assets/products/${item.img}`)} />
             <Info>
                 <Icon>
                     <ShoppingCartOutlined />
@@ -87,4 +85,4 @@ const Favourite = ({ favourites }) => {
     );
 };
 
-export default Favourite;
+export default ProductsSection;
