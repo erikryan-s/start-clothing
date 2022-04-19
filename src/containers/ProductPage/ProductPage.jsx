@@ -21,8 +21,8 @@ const ProductPage = () => {
     );
     return (
         <Container>
-            <Navbar />
             <Announcement />
+            <Navbar />
             <ItemContainer>
                 <ProductInfo item={item} />
             </ItemContainer>

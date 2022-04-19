@@ -21,6 +21,14 @@ const App = () => {
                             />
                         </Route>
                     </Route>
+                    <Route
+                        path="*"
+                        element={
+                            <main style={{ padding: "1rem" }}>
+                                <h1>404: There's nothing here!</h1>
+                            </main>
+                        }
+                    />
                 </Routes>
             </Router>
         </>

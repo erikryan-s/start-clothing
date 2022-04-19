@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
     height: 30px;
@@ -14,7 +15,11 @@ const Container = styled.div`
 
 const Announcement = () => {
     return (
-        <Container>NEW IN: CARHARTT WIP | GRAMICCI | STONE ISLAND</Container>
+        <Link to={{ pathname: "/products" }} style={{ textDecoration: "none" }}>
+            <Container>
+                NEW IN: CARHARTT WIP | GRAMICCI | STONE ISLAND
+            </Container>
+        </Link>
     );
 };
 

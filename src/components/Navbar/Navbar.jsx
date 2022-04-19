@@ -5,7 +5,7 @@ import { mobile } from "../../services/responsive";
 import { Link } from "react-router-dom";
 
 const Container = styled.div`
-    height: 60px;
+    height: 75px;
     ${mobile({ height: "50px" })}
 `;
 
@@ -48,6 +48,7 @@ const Center = styled.div`
 `;
 
 const Logo = styled.h1`
+    font-size: 48px;
     font-weight: bold;
     ${mobile({ fontSize: "24px" })}
     underline: none;
