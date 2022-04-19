@@ -20,9 +20,9 @@ An e-commerce website built using React and Firestore. Featuring a design based 
     <h3>Home Page</h3>
     <img src="https://user-images.githubusercontent.com/100544923/163005073-076fdded-923d-4ba7-92da-805b66d38aa0.gif" height="400" width=auto>
     <h3>All Products</h3>
-    <img src="https://i.gyazo.com/8eae27fe360a3bf47c38fecf4d2e8b54.jpg" height="400" width=auto>
+    <img src="https://i.gyazo.com/80d597fd328b9095d3539a81c36c5c92.png" height="400" width=auto>
     <h3>Product Page</h3>
-    <img src="https://i.gyazo.com/a7894af564e5e98dd1d17a8c72f63df6.jpg" height="400" width=auto>
+    <img src="https://i.gyazo.com/398e953e49cbe4ba8124ad01b5da8c52.jpg" height="400" width=auto>
 </p>
 
 ## Start-up Instructions
@@ -100,8 +100,11 @@ You will also see any lint errors in the console.
 
 ### Breakdown of Logic
 
--   //
--   //
+-   design UI using styled components and material UI
+-   create home page, products grid, carousel and product page (with id parameter)
+-   set up routing between pages using react-router DOM
+-   store data in FireStore and fetch it in the front-end using fetch and async / await
+-   upload final version to GitHub
 
 ## Design Inspiration
 
@@ -113,5 +116,5 @@ You will also see any lint errors in the console.
 
 ## Future Updates and Current Limitations
 
--   //
--   //
+-   upload data to FireStore and fetch it
+-   implement cart system

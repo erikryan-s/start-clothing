@@ -1,4 +1,4 @@
-import firestore from "../firebase.js";
+import firestore from "./firebase.js";
 import data from "../services/data";
 
 //CRUD - Create Read Update Delete
