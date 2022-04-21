@@ -2,7 +2,7 @@
 
 An e-commerce website built using React and Firestore. Featuring a design based on the [END Clothing](https://www.endclothing.com/au) webstore.
 
-🔗 [Live Demo](https://erikryan-s.github.io/start-clothing/) (**TO BE UPDATED**)
+🔗 [Live Demo](https://erikryan-s.github.io/start-clothing/) (**TO BE DEPLOYED**)
 
 ## Table of Contents
 
