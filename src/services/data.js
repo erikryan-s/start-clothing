@@ -24,15 +24,15 @@ export const sliderItems = [
 
 export const favourites = [
     {
-        id: 2,
+        id: 1,
         img: "APC-HOODY.png",
     },
     {
-        id: 6,
+        id: 2,
         img: "PA-JKT.png",
     },
     {
-        id: 8,
+        id: 3,
         img: "SI-CARDIGAN.png",
     },
 ];

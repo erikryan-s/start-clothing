@@ -51,7 +51,7 @@ const Logo = styled.h1`
     font-size: 48px;
     font-weight: bold;
     ${mobile({ fontSize: "24px" })}
-    underline: none;
+    text-decoration: none;
     color: black;
     cursor: pointer;
 `;
